@@ -1,0 +1,82 @@
+# Cursor IDE Rules
+
+Complete coding standards for Python projects. See CLAUDE.md for full details.
+
+## Quick Summary
+
+- **Language**: Python 3.10+
+- **Package Manager**: pipenv (Pipfile + Pipfile.lock)
+- **Formatter**: Ruff (88 chars, 4-space indent)
+- **Type Checker**: mypy (strict, 100% target)
+- **Testing**: pytest (80%+ coverage)
+- **Docs**: Docusaurus + memory bank
+- **Commits**: Conventional Commits with mandatory scopes
+
+## Key Rules
+
+### Code Style
+- Ruff for formatting & linting
+- PascalCase (classes), snake_case (functions), UPPER_SNAKE_CASE (constants)
+- Google-style docstrings on public functions/classes
+- Never `print()` in production — use `logging`
+
+### Type Safety
+- Type all functions and variables
+- Use Python 3.10+ syntax: `list[T]`, `str | None`
+- Pydantic v2 for data validation
+- mypy in strict mode
+
+### Architecture
+- `src/` directory layout
+- Single Responsibility Principle
+- Dependency injection (no globals)
+- Custom exceptions inheriting from `DomainError`
+- pipenv exclusively (never pip)
+
+### Git Commits
+- **Conventional Commits format**: `<type>(<scope>): <subject>`
+- **Scopes are mandatory** → See PROJECT_SCOPES.md
+- Types: feat, fix, docs, style, refactor, perf, test, chore
+- Atomic commits, present tense, functional descriptions
+
+### Testing
+- pytest framework with conftest.py fixtures
+- 80% minimum coverage, 100% for critical code
+- Unit, integration, E2E organization
+- Mock external dependencies only
+
+### Code Review
+- Check correctness, security (SQL injection, secrets), testability, performance
+- No N+1 queries or hardcoded secrets
+- Clear naming, < 30 line functions target
+- Constructive tone in comments
+
+## Full Details
+
+See CLAUDE.md for comprehensive rules including:
+- Detailed style guide
+- Type annotation guide
+- Architecture patterns
+- Git workflow
+- Testing strategy
+- Code review checklist
+- Documentation standards (Docusaurus, Mermaid C4)
+- CI/CD guidelines
+- Philosophy (prefer established libs, Python first)
+
+## Commit Scopes (Your Project)
+
+**Core**: cli, playbook, schema, registry
+**Analyzers**: analyzer, analyzer/trivy, analyzer/sbom, analyzer/hadolint, analyzer/skopeo, analyzer/freshness, analyzer/size, analyzer/popularity, analyzer/endoflife, analyzer/scorecarddev, analyzer/provenance
+**Rendering**: report, templates
+**Tooling**: ci, deps, docs
+
+See PROJECT_SCOPES.md for details and usage guidelines.
+
+## Questions?
+
+- **Scopes?** → PROJECT_SCOPES.md
+- **Format code?** → `ruff format .`
+- **Type check?** → `mypy src/`
+- **Run tests?** → `pytest --cov=src`
+- **Detailed guide?** → CLAUDE.md

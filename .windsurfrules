@@ -1,0 +1,61 @@
+# Windsurf Rules
+
+Coding standards for production Python projects. Full details in CLAUDE.md.
+
+## Context
+
+- Python 3.10+ with pipenv
+- Ruff + mypy + pytest
+- Conventional Commits with mandatory scopes
+- Docusaurus documentation
+- GitHub Actions + Release Please
+
+## Standards at a Glance
+
+**Style**: Ruff (88 chars), PascalCase/snake_case, Google docstrings
+**Types**: 100% coverage, Python 3.10+ syntax, Pydantic v2
+**Testing**: pytest, 80%+ coverage, FIRST principles
+**Git**: Conventional Commits, mandatory scopes from PROJECT_SCOPES.md
+**Architecture**: src/ layout, Single Responsibility, DI, custom exceptions
+**Docs**: Docusaurus, memory bank, Mermaid C4 diagrams
+
+## Commit Scopes (Mandatory)
+
+Your project scopes:
+- `cli`, `playbook`, `schema`, `registry` (core)
+- `analyzer`, `analyzer/*` (11 variants)
+- `report`, `templates` (rendering)
+- `ci`, `deps`, `docs` (tooling)
+
+Full list with details: PROJECT_SCOPES.md
+
+## Quick Commands
+
+```bash
+ruff format .              # Format code
+ruff check . --fix         # Lint and fix
+mypy src/                  # Type check
+pytest --cov=src           # Test with coverage
+```
+
+## Code Rules Checklist
+
+- [ ] Code is typed (mypy strict)
+- [ ] Tests added (80%+ coverage)
+- [ ] Ruff passes (`ruff check .`)
+- [ ] Docstrings present (public functions)
+- [ ] Commit uses correct scope
+- [ ] Commit subject is functional, present tense
+- [ ] No `print()` (use logging)
+- [ ] No hardcoded secrets
+- [ ] No global state (DI pattern)
+- [ ] Error handling with domain exceptions
+
+## Documentation
+
+See full details in CLAUDE.md, PROJECT_SCOPES.md, and `rules/` directory.
+
+Key guides:
+- `rules/python/` — Style, typing, architecture
+- `rules/workflow/` — Git, testing, review, documentation
+- PROJECT_SCOPES.md — Your commit scope definitions
