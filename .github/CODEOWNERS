@@ -1,0 +1,21 @@
+# Code Owners for this repository
+
+# Standards documents - requires review
+CLAUDE.md @trivoallan
+PROJECT_SCOPES.md @trivoallan
+QUICK_REFERENCE.md @trivoallan
+
+# Detailed guides - require review for changes
+rules/ @trivoallan
+
+# Configuration files - require review
+.cursorrules @trivoallan
+.windsurfrules @trivoallan
+.github/copilot-instructions.md @trivoallan
+
+# Everyone can contribute updates to documentation
+README.md
+FINAL_SUMMARY.md
+DEPLOYMENT.md
+INTEGRATION_GUIDE.md
+INDEX.md

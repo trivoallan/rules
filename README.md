@@ -18,7 +18,7 @@ The same rules are available in multiple formats:
 
 ```bash
 # Clone or download this repository
-git clone https://github.com/your-org/agent-rules.git
+git clone https://github.com/trivoallan/rules.git agent-rules
 
 # Copy relevant files to your project
 cp agent-rules/CLAUDE.md your-project/
@@ -129,7 +129,7 @@ Include a link to this repository in your project README with a note that you fo
 ```markdown
 ## Coding Standards
 
-We follow the [Agent Rules](https://github.com/your-org/agent-rules) for all Python code.
+We follow the [Agent Rules](https://github.com/trivoallan/rules) for all Python code.
 Our conventions cover style, typing, architecture, testing, and git workflow.
 ```
 
