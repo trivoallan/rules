@@ -6,12 +6,12 @@ Comprehensive coding standards for Python projects, including project-specific c
 
 - **Language**: Python 3.10+
 - **Package Manager**: **pipenv** (Pipfile + Pipfile.lock)
-- **Linter/Formatter**: Ruff (88 char lines)
+- **Linter/Formatter**: Trunk (wraps Ruff, 88 char lines)
 - **Type Checker**: mypy (strict mode, 100% coverage target)
 - **Testing Framework**: pytest (80%+ coverage minimum)
 - **VCS**: Git with Conventional Commits (mandatory scopes)
 - **Documentation**: Docusaurus + memory bank
-- **CI/CD**: GitHub Actions + Release Please + Super Linter
+- **CI/CD**: GitHub Actions + Release Please + Trunk
 - **Diagrams**: Mermaid (C4 model preferred)
 - **Philosophy**: Prefer established libraries, Python first
 
@@ -133,7 +133,7 @@ Comprehensive coding standards for Python projects, including project-specific c
 
 - **Platform**: GitHub Actions only
 - **Release**: Release Please for semantic versioning
-- **Quality**: Super Linter for all PR checks
+- **Quality**: Trunk for all PR checks (lint, format, type check)
 - **Versioning**: Semantic Versioning (semver.org)
 - **Changelog**: Auto-generated from commit messages
 
@@ -150,12 +150,9 @@ Comprehensive coding standards for Python projects, including project-specific c
 Before committing:
 
 ```bash
-# Format and lint
-ruff format .
-ruff check . --fix
-
-# Type check
-mypy src/
+# Format and lint (Trunk wraps Ruff, mypy, etc.)
+trunk fmt
+trunk check --fix
 
 # Run tests
 pytest --cov=src --cov-fail-under=80
@@ -171,7 +168,7 @@ git push origin feature/my-feature
 
 Before submitting PR:
 
-- [ ] All checks pass locally (`ruff`, `mypy`, `pytest`)
+- [ ] All checks pass locally (`trunk check`, `pytest`)
 - [ ] Commit messages use correct scope
 - [ ] Description explains what and why
 - [ ] Tests added/updated

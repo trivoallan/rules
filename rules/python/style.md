@@ -2,8 +2,8 @@
 
 ## Formatage
 
-- Utiliser **Ruff** comme formateur et linter principal (remplace Black, isort, flake8).
-- Longueur de ligne maximale : **88 caractères** (défaut Ruff/Black).
+- Utiliser **Trunk** comme méta-linter/formateur (wraps Ruff, qui remplace Black, isort, flake8).
+- Longueur de ligne maximale : **88 caractères**.
 - Indentation : **4 espaces**, jamais de tabulations.
 - Encodage : **UTF-8** partout.
 
@@ -20,7 +20,7 @@
 
 ## Imports
 
-Ordre strict (géré automatiquement par Ruff via `isort`) :
+Ordre strict (géré automatiquement par Trunk/Ruff via `isort`) :
 
 1. Bibliothèque standard
 2. Packages tiers

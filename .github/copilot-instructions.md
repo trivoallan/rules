@@ -101,8 +101,8 @@ Closes #123
 
 ## When in Doubt
 
-- **Formatting?** → Run `ruff format .`
-- **Type safety?** → Use `mypy src/`
+- **Formatting?** → Run `trunk fmt`
+- **Lint + type check?** → Run `trunk check`
 - **Tests?** → Run `pytest --cov=src`
 - **Commits?** → Check PROJECT_SCOPES.md
 - **Full guide?** → See CLAUDE.md

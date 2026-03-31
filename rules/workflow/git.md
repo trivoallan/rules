@@ -94,8 +94,7 @@ Depends on #450
 ### Checklist avant merge
 
 - [ ] Tests locaux : `pytest -v --cov`
-- [ ] Linting : `ruff check .`
-- [ ] Typing : `mypy src/`
+- [ ] Linting et formatage : `trunk check`
 - [ ] Pas de code non-utilisé (dead code)
 - [ ] Pas de secrets en dur (utiliser `.env` ou vaults)
 - [ ] Documentation mise à jour

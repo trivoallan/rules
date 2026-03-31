@@ -82,8 +82,8 @@ cp -r agent-rules/rules/ your-project/docs/coding-standards/
 ## 🎯 Key Principles
 
 ### Style & Formatting
-- **Ruff** for automatic formatting and linting
-- 88-character line length (Black/Ruff standard)
+- **Trunk** for linting and formatting (wraps Ruff)
+- 88-character line length
 - 4-space indentation
 - Google-style docstrings
 
@@ -145,12 +145,9 @@ cp -r rules/ docs/coding-standards/
 ### Quick Command Reference
 
 ```bash
-# Format and lint code
-ruff format .
-ruff check . --fix
-
-# Type check
-mypy src/
+# Format and lint (Trunk wraps Ruff, mypy, etc.)
+trunk fmt
+trunk check --fix
 
 # Run tests with coverage
 pytest --cov=src --cov-report=html
@@ -169,7 +166,7 @@ git commit -m "feat(auth): add JWT refresh mechanism"
 
 | Tool | Purpose |
 |------|---------|
-| **Ruff** | Formatter + Linter (replaces Black, isort, flake8) |
+| **Trunk** | Meta-linter/formatter (wraps Ruff, mypy, and others) |
 | **mypy/pyright** | Static type checker (target 100% coverage) |
 | **pytest** | Testing framework |
 | **Pydantic v2** | Data validation at system boundaries |
@@ -201,7 +198,7 @@ git commit -m "feat(auth): add JWT refresh mechanism"
 
 ### Q: How do I enforce these rules?
 **A**:
-1. Use CI/CD to run `ruff`, `mypy`, `pytest`
+1. Use CI/CD to run `trunk check`, `pytest`
 2. Require passing checks before merge
 3. Code review using `code-review.md` checklist
 4. Use `CODEOWNERS` for domain-specific reviews

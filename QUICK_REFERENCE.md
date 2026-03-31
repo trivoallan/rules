@@ -148,9 +148,8 @@ Pattern: `test_<function>_<scenario>`
 
 ```bash
 # Run locally before committing
-ruff format .
-ruff check . --fix
-mypy src/
+trunk fmt
+trunk check --fix
 pytest --cov=src --cov-report=term-missing
 
 # Push and verify CI passes
@@ -207,13 +206,10 @@ logger.error("Failed to fetch user", exc_info=True)
 
 ```bash
 # Format code
-ruff format .
+trunk fmt
 
 # Check and fix issues
-ruff check . --fix
-
-# Type check
-mypy src/
+trunk check --fix
 
 # Run tests with coverage
 pytest --cov=src

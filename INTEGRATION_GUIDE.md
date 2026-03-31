@@ -64,22 +64,14 @@ A complete example is available in `pyproject.toml.example`.
 Add these steps to your GitHub Actions workflow:
 
 ```yaml
-- name: Format check
-  run: ruff format --check .
-
-- name: Lint
-  run: ruff check .
-
-- name: Type check
-  run: mypy src/
+- name: Trunk Check
+  uses: trunk-io/trunk-action@v1
 
 - name: Tests
   run: pytest --cov=src --cov-fail-under=80
-
-- name: Super Linter
-  uses: super-linter/super-linter@v5
 ```
 
+Trunk wraps Ruff, mypy, and other configured linters/formatters in a single step.
 For automated releases, add the [Release Please action](https://github.com/googleapis/release-please-action).
 
 ## Step 4 — Set up commit scopes
