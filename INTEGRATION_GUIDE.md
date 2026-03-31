@@ -57,7 +57,7 @@ testpaths = ["tests"]
 addopts = ["--cov=src", "--cov-fail-under=80"]
 ```
 
-A complete example is available in `pyproject.toml.example`.
+A complete example is available in [`pyproject.toml.example`](pyproject.toml.example).
 
 ## Step 3 — Update your CI/CD pipeline
 
@@ -76,7 +76,7 @@ For automated releases, add the [Release Please action](https://github.com/googl
 
 ## Step 4 — Set up commit scopes
 
-Project-specific commit scopes are defined in `PROJECT_SCOPES.md`. Copy and adapt this file:
+Project-specific commit scopes are defined in [`PROJECT_SCOPES.md`](PROJECT_SCOPES.md). Copy and adapt this file:
 
 ```bash
 cp agent-rules/PROJECT_SCOPES.md your-project/
@@ -105,8 +105,8 @@ module.exports = {
 
 ## Step 5 — Communicate to the team
 
-1. Share `CLAUDE.md` and `QUICK_REFERENCE.md` with your team
-2. Review the commit scopes list together (`PROJECT_SCOPES.md`)
+1. Share [`CLAUDE.md`](CLAUDE.md) and [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) with your team
+2. Review the commit scopes list together ([`PROJECT_SCOPES.md`](PROJECT_SCOPES.md))
 3. Set up branch protection rules on GitHub (require CI + 1 review)
 
 **Gradual rollout:**

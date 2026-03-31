@@ -278,7 +278,7 @@ code blocks
 
 ## Diagrams
 
-Use **Mermaid** for all diagrams (see `rules/workflow/diagrams.md`).
+Use **Mermaid** for all diagrams.
 
 Store in `docs/static/diagrams/` with `.mmd` extension:
 

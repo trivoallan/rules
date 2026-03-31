@@ -33,26 +33,32 @@ cp -r agent-rules/rules/ your-project/docs/coding-standards/
 ## 📚 Contents
 
 ### Agent-Specific Files
-- `CLAUDE.md` — Configuration for Claude Code / Cowork mode
-- `.cursorrules` — Configuration for Cursor editor
-- `.windsurfrules` — Configuration for Windsurf editor
-- `.github/copilot-instructions.md` — Configuration for GitHub Copilot
+- [`CLAUDE.md`](CLAUDE.md) — Configuration for Claude Code / Cowork mode
+- [`.cursorrules`](.cursorrules) — Configuration for Cursor editor
+- [`.windsurfrules`](.windsurfrules) — Configuration for Windsurf editor
+- [`.github/copilot-instructions.md`](.github/copilot-instructions.md) — Configuration for GitHub Copilot
+
+### Reference
+- [`PROJECT_SCOPES.md`](PROJECT_SCOPES.md) — Definitive list of commit scopes
+- [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) — Daily cheat sheet
+- [`INTEGRATION_GUIDE.md`](INTEGRATION_GUIDE.md) — Step-by-step integration guide
+- [`pyproject.toml.example`](pyproject.toml.example) — Complete tool configuration example
 
 ### Detailed Rule Documents
 
 #### Python Conventions (`rules/python/`)
-- **`style.md`** — Code formatting, naming conventions, docstrings
-  - Ruff configuration, PEP 8 style
+- [**`style.md`**](rules/python/style.md) — Code formatting, naming conventions, docstrings
+  - Trunk/Ruff configuration, PEP 8 style
   - Naming: PascalCase, snake_case, UPPER_SNAKE_CASE
   - Google-style docstrings
 
-- **`typing.md`** — Type annotations and type safety
+- [**`typing.md`**](rules/python/typing.md) — Type annotations and type safety
   - Full type coverage (100% mypy/pyright)
   - Python 3.10+ syntax (list[T], str | None)
   - Pydantic v2 for validation
   - TypeVar and Protocol usage
 
-- **`architecture.md`** — Project structure and design patterns
+- [**`architecture.md`**](rules/python/architecture.md) — Project structure and design patterns
   - Recommended directory layout (src/ structure)
   - Single Responsibility Principle
   - Dependency injection patterns
@@ -60,24 +66,28 @@ cp -r agent-rules/rules/ your-project/docs/coding-standards/
   - Logging best practices
 
 #### Workflow Standards (`rules/workflow/`)
-- **`git.md`** — Version control and commit standards
+- [**`git.md`**](rules/workflow/git.md) — Version control and commit standards
   - Git Flow branching strategy
   - Conventional Commits format
   - Atomic, clear commit messages
   - Pull request guidelines
 
-- **`testing.md`** — Testing practices and coverage
+- [**`testing.md`**](rules/workflow/testing.md) — Testing practices and coverage
   - pytest framework and structure
   - Unit, integration, E2E test organization
   - 80%+ coverage minimum (100% for critical code)
   - FIRST principles (Fast, Independent, Repeatable, Self-checking, Timely)
   - Fixtures and mocking best practices
 
-- **`code-review.md`** — Code review standards and process
+- [**`code-review.md`**](rules/workflow/code-review.md) — Code review standards and process
   - What to check: correctness, security, testability, performance
   - Security checklist (SQL injection, secrets, XSS)
   - Code ownership and CODEOWNERS file
   - Constructive review tone
+
+- [**`documentation.md`**](rules/workflow/documentation.md) — Docusaurus setup, memory bank, Mermaid diagrams
+
+- [**`commit-scopes.md`**](rules/workflow/commit-scopes.md) — Conventional Commits detailed guide
 
 ## 🎯 Key Principles
 

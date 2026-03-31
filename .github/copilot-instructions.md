@@ -30,7 +30,7 @@ Coding standards for Python projects — apply these principles to all suggestio
 
 ### Git Commits
 - **Conventional Commits**: `<type>(<scope>): <subject>`
-- **Mandatory scopes** (see PROJECT_SCOPES.md):
+- **Mandatory scopes** (see [PROJECT_SCOPES.md](../PROJECT_SCOPES.md)):
   - Core: `cli`, `playbook`, `schema`, `registry`
   - Analyzers: `analyzer`, `analyzer/trivy`, `analyzer/sbom`, etc.
   - Rendering: `report`, `templates`
@@ -104,5 +104,5 @@ Closes #123
 - **Formatting?** → Run `trunk fmt`
 - **Lint + type check?** → Run `trunk check`
 - **Tests?** → Run `pytest --cov=src`
-- **Commits?** → Check PROJECT_SCOPES.md
-- **Full guide?** → See CLAUDE.md
+- **Commits?** → Check [PROJECT_SCOPES.md](../PROJECT_SCOPES.md)
+- **Full guide?** → See [CLAUDE.md](../CLAUDE.md)

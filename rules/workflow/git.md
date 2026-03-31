@@ -38,7 +38,7 @@ Suivre la convention **Conventional Commits** ([conventionalcommits.org](https:/
 
 **Scopes sont OBLIGATOIRES** — doivent représenter le composant architectural modifié.
 
-Voir `PROJECT_SCOPES` pour la liste des scopes définis pour votre projet.
+Voir [`PROJECT_SCOPES.md`](../../PROJECT_SCOPES.md) pour la liste des scopes définis pour votre projet.
 
 **Exemples** :
 

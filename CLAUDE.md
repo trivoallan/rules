@@ -183,23 +183,24 @@ Ask clarifying questions if:
 - The style guide doesn't address a specific scenario
 - Trade-offs between conventions are unclear
 - You're uncertain how to structure a complex module
-- Unclear which scope to use for a commit (see PROJECT_SCOPES.md)
+- Unclear which scope to use for a commit (see [PROJECT_SCOPES.md](PROJECT_SCOPES.md))
 
 ---
 
 ## Reference Documents
 
-- **PROJECT_SCOPES.md** — Definitive list of commit scopes
-- **Quick Reference** — Cheat sheet for commands, patterns, examples
+- **[PROJECT_SCOPES.md](PROJECT_SCOPES.md)** — Definitive list of commit scopes
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** — Cheat sheet for commands, patterns, examples
+- **[INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md)** — How to adopt these standards in a project
 - **Detailed Guides**:
-  - `rules/python/style.md` — Formatting, naming, docstrings
-  - `rules/python/typing.md` — Type annotations, Pydantic
-  - `rules/python/architecture.md` — Structure, DI, exceptions, logging
-  - `rules/workflow/git.md` — Git Flow, branching, PRs
-  - `rules/workflow/testing.md` — pytest, fixtures, coverage
-  - `rules/workflow/code-review.md` — Review standards, security
-  - `rules/workflow/documentation.md` — Docusaurus, memory bank, Mermaid
-  - `rules/workflow/commit-scopes.md` — Conventional Commits guide
+  - [`rules/python/style.md`](rules/python/style.md) — Formatting, naming, docstrings
+  - [`rules/python/typing.md`](rules/python/typing.md) — Type annotations, Pydantic
+  - [`rules/python/architecture.md`](rules/python/architecture.md) — Structure, DI, exceptions, logging
+  - [`rules/workflow/git.md`](rules/workflow/git.md) — Git Flow, branching, PRs
+  - [`rules/workflow/testing.md`](rules/workflow/testing.md) — pytest, fixtures, coverage
+  - [`rules/workflow/code-review.md`](rules/workflow/code-review.md) — Review standards, security
+  - [`rules/workflow/documentation.md`](rules/workflow/documentation.md) — Docusaurus, memory bank, Mermaid
+  - [`rules/workflow/commit-scopes.md`](rules/workflow/commit-scopes.md) — Conventional Commits guide
 
 ---
 

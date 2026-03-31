@@ -162,12 +162,14 @@ git push origin feature/my-feature
 
 ## 🔗 Full Documentation
 
-- **Style**: See `rules/python/style.md`
-- **Typing**: See `rules/python/typing.md`
-- **Architecture**: See `rules/python/architecture.md`
-- **Git Workflow**: See `rules/workflow/git.md`
-- **Testing**: See `rules/workflow/testing.md`
-- **Code Review**: See `rules/workflow/code-review.md`
+- **Style**: [`rules/python/style.md`](rules/python/style.md)
+- **Typing**: [`rules/python/typing.md`](rules/python/typing.md)
+- **Architecture**: [`rules/python/architecture.md`](rules/python/architecture.md)
+- **Git Workflow**: [`rules/workflow/git.md`](rules/workflow/git.md)
+- **Testing**: [`rules/workflow/testing.md`](rules/workflow/testing.md)
+- **Code Review**: [`rules/workflow/code-review.md`](rules/workflow/code-review.md)
+- **Commit Scopes**: [`PROJECT_SCOPES.md`](PROJECT_SCOPES.md)
+- **Full standards**: [`CLAUDE.md`](CLAUDE.md)
 
 ## 💡 Common Patterns
 
